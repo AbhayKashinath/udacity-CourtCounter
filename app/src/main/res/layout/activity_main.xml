@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.abhay.courtcounter.MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#616161"
+            android:text="Team A"
+            android:textSize="14dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_horizontal"
+            android:paddingtop="16dp"
+            android:paddingBottom="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="56sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/team_a_score"
+            android:gravity="center_horizontal"
+            android:paddingBottom="24dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ 3 Points"
+            android:onClick="add3forteamA"
+            android:background="#ff9800"
+            android:gravity="center_horizontal"
+            android:padding="7dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ 2 Points"
+            android:onClick="add2forteamA"
+            android:background="#ff9800"
+            android:gravity="center_horizontal"
+            android:padding="8dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Free throw"
+            android:background="#ff9800"
+            android:onClick="add1forteamA"
+            android:padding="7dp"
+            android:gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset A"
+            android:background="#ff9800"
+            android:onClick="resetScoreA"
+            android:padding="7dp"
+            android:layout_gravity="center_horizontal"
+            android:elevation="0dp" />
+
+    </LinearLayout>
+
+    <view
+            android:layout_width="3dp"
+            android:layout_height="340dp"
+            android:background="color/darker_gray">
+
+        </view>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context="com.example.abhay.courtcounter.MainActivity"
+            >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team B"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_horizontal"
+            android:paddingtop="16dp"
+            android:paddingBottom="16dp"
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="56sp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-light"
+            android:id="@+id/team_b_score"
+            android:gravity="center_horizontal"
+            android:paddingBottom="25dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ 3 Points"
+            android:onClick="add3forteamB"
+            android:background="#ff9800"
+            android:gravity="center_horizontal"
+            android:padding="7dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ 2 Points"
+            android:background="#ff9800"
+            android:onClick="add2forteamB"
+            android:gravity="center_horizontal"
+            android:padding="7dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Free throw"
+            android:background="#ff9800"
+            android:onClick="add1forteamB"
+            android:padding="7dp"
+            android:gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset B"
+            android:background="#ff9800"
+            android:onClick="resetScoreB"
+            android:padding="7dp"
+            android:layout_gravity="center_horizontal"
+            android:elevation="0dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
